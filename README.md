@@ -254,7 +254,7 @@ Other status codes:
 
 ## Endpoints
 
-### Authentication:
+### Authentication
 
 `POST /api/users/login`
 
@@ -273,7 +273,7 @@ No authentication required, returns a [User](#users-for-authentication)
 Required fields: `email`, `password`
 
 
-### Registration:
+### Registration
 
 `POST /api/users`
 
