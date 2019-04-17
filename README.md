@@ -89,7 +89,16 @@ Other status codes:
     "score" : 4.56,
     "views" : 97090,
     "image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
-    "categoryList": ["Traveling", "Life"],
+    "categoryList": [
+      {
+        "slug" => "traveling",
+        "name" => "Traveling", 
+      },
+      {
+        "slug" => "life",
+        "name => "Life"
+      }
+    ],
     "createdAt": "2016-02-18T03:22:56.637Z",
     "updatedAt": "2016-02-18T03:48:35.824Z",
     "liked": false,
@@ -123,7 +132,16 @@ Other status codes:
     "score" : 4.56,
     "views" : 97090,
     "image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
-    "categoryList": ["Traveling", "Life"],
+    "categoryList": [
+      {
+        "slug" => "traveling",
+        "name" => "Traveling", 
+      },
+      {
+        "slug" => "life",
+        "name => "Life"
+      }
+    ],
     "createdAt": "2016-02-18T03:22:56.637Z",
     "updatedAt": "2016-02-18T03:48:35.824Z",
     "liked": false,
@@ -153,7 +171,16 @@ Other status codes:
     "score" : 3.66,
     "views" : 4646,
     "image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
-    "categoryList": ["Traveling", "Life"],
+    "categoryList": [
+      {
+        "slug" => "traveling",
+        "name" => "Traveling", 
+      },
+      {
+        "slug" => "life",
+        "name => "Life"
+      }
+    ],
     "createdAt": "2016-02-18T03:22:56.637Z",
     "updatedAt": "2016-02-18T03:48:35.824Z",
     "liked": false,
@@ -246,8 +273,14 @@ Other status codes:
 ```JSON
 {
   "categories": [
-    "Education",
-    "Restaurant"
+    {
+      "slug":"qui-voluptas",
+      "name":"Qui & Voluptas"
+    },
+    {
+      "slug":"maxime",
+      "name":"Maxime"
+    }
   ]
 }
 ```
@@ -276,7 +309,16 @@ Other status codes:
             "likesCount" : 5566,
             "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
-    		"categoryList": ["Ipsum"],
+    		"categoryList": [
+          {
+            "slug" => "traveling",
+            "name" => "Traveling", 
+          },
+          {
+            "slug" => "life",
+             "name => "Life"
+          }
+        ],
     		"author": {
       			"username": "Jack",
       			"bio": "I work at statefarm",
@@ -307,7 +349,16 @@ Other status codes:
             "likesCount" : 8998,
             "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
-    		"categoryList : ["In", "Facere", "Veritatis"],
+    		"categoryList": [
+          {
+            "slug" => "traveling",
+            "name" => "Traveling", 
+          },
+          {
+            "slug" => "life",
+            "name => "Life"
+          }
+        ],
     		"author": {
       			"username": "Jack",
       			"bio": "I work at statefarm",
@@ -361,7 +412,16 @@ Other status codes:
             "likesCount" : 8998,
             "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
-    		"categoryList : ["Facere", "Veritatis"],
+    		"categoryList": [
+          {
+            "slug" => "traveling",
+             "name" => "Traveling", 
+          },
+          {
+            "slug" => "life",
+            "name => "Life"
+          }
+        ],
     		"author": {
       			"username": "Jack",
       			"bio": "I work at statefarm",
@@ -392,7 +452,16 @@ Other status codes:
             "likesCount" : 8998,
             "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
-    		"categoryList : [],
+    		"categoryList": [
+          {
+            "slug" => "traveling",
+             "name" => "Traveling", 
+          },
+          {
+            "slug" => "life",
+            "name => "Life"
+          }
+        ],
     		"author": {
       			"username": "Jack",
       			"bio": "I work at statefarm",
@@ -438,7 +507,16 @@ Other status codes:
             "likesCount" : 8998,
             "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
-    		"categoryList : ["Facere", "Veritatis"],
+    		"categoryList": [
+          {
+            "slug" => "traveling",
+             "name" => "Traveling", 
+          },
+          {
+            "slug" => "life",
+            "name => "Life"
+          }
+        ],
     		"author": {
       			"username": "Jack",
       			"bio": "I work at statefarm",
@@ -469,7 +547,16 @@ Other status codes:
             "likesCount" : 8998,
             "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
-    		"categoryList : ["Veritatis"],
+    		"categoryList": [
+          {
+            "slug" => "traveling",
+             "name" => "Traveling", 
+          },
+          {
+            "slug" => "life",
+            "name => "Life"
+          }
+        ],
     		"author": {
       			"username": "Jack",
       			"bio": "I work at statefarm",
@@ -622,7 +709,7 @@ Query Parameters:
 
 Filter by category:
 
-`?category=Traveling`
+`?category=traveling`
 
 Filter by author:
 
