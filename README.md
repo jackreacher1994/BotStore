@@ -85,8 +85,6 @@ Other status codes:
     "name" : "Growth Bot",
     "title": "A chatbot to organize your visit to Tangier",
     "body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
-    "votes" : 1445,
-    "score" : 4.56,
     "views" : 97090,
     "image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
     "categoryList": [
@@ -103,6 +101,10 @@ Other status codes:
     "updatedAt": "2016-02-18T03:48:35.824Z",
     "liked": false,
     "likesCount": 1500,
+    "voted": false,
+    "votedStar": null,
+    "votesCount": 1000,
+    "averageStar": 4,
     "author": {
       "username": "Jack",
       "bio": "I work at statefarm",
@@ -128,8 +130,6 @@ Other status codes:
     "name" : "Growth Bot",
     "title": "A chatbot to organize your visit to Tangier",
     "body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
-    "votes" : 1445,
-    "score" : 4.56,
     "views" : 97090,
     "image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
     "categoryList": [
@@ -146,6 +146,10 @@ Other status codes:
     "updatedAt": "2016-02-18T03:48:35.824Z",
     "liked": false,
     "likesCount": 1500,
+    "voted": false,
+    "votedStar": null,
+    "votesCount": 1000,
+    "averageStar": 4,
     "author": {
       "username": "Jack",
       "bio": "I work at statefarm",
@@ -167,8 +171,6 @@ Other status codes:
             - Collect and prioritize meeting topics
             - Prepare retrospective agendas in advance
             - Collect ideas and run idea tournaments with your team",
-    "votes" : 545,
-    "score" : 3.66,
     "views" : 4646,
     "image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
     "categoryList": [
@@ -185,6 +187,10 @@ Other status codes:
     "updatedAt": "2016-02-18T03:48:35.824Z",
     "liked": false,
     "likesCount": 4646,
+    "voted": true,
+    "votedStar": 3,
+    "votesCount": 44564,
+    "averageStar": 5,
     "author": {
       "username": "Jack",
       "bio": "I work at statefarm",
@@ -301,13 +307,15 @@ Other status codes:
     		"name" : "Growth Bot",
     		"title": "A chatbot to organize your visit to Tangier",
     		"body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
-    		"votes" : 1445,
-    		"score" : 4.56,
     		"views" : 97090,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
-            "liked" : false,
-            "likesCount" : 5566,
-            "createdAt": "2016-02-18T03:22:56.637Z",
+        "liked" : false,
+        "likesCount" : 5566,
+        "voted": false,
+        "votedStar": null,
+        "votesCount": 1000,
+        "averageStar": 4,
+        "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
     		"categoryList": [
           {
@@ -341,13 +349,15 @@ Other status codes:
             	- Collect and prioritize meeting topics
             	- Prepare retrospective agendas in advance
             	- Collect ideas and run idea tournaments with your team",
-    		"votes" : 545,
-    		"score" : 3.66,
     		"views" : 4646,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
-            "liked" : true
-            "likesCount" : 8998,
-            "createdAt": "2016-02-18T03:22:56.637Z",
+        "liked" : true
+        "likesCount" : 8998,
+        "voted": false,
+        "votedStar": null,
+        "votesCount": 4700,
+        "averageStar": 3,
+        "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
     		"categoryList": [
           {
@@ -404,13 +414,15 @@ Other status codes:
     		"name" : "Growth Bot",
     		"title": "A chatbot to organize your visit to Tangier",
     		"body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
-    		"votes" : 1445,
-    		"score" : 4.56,
     		"views" : 97090,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
-            "liked" : true,
-            "likesCount" : 8998,
-            "createdAt": "2016-02-18T03:22:56.637Z",
+        "liked" : true,
+        "likesCount" : 8998,
+        "voted": false,
+        "votedStar": null,
+        "votesCount": 1000,
+        "averageStar": 4,
+        "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
     		"categoryList": [
           {
@@ -444,13 +456,15 @@ Other status codes:
             	- Collect and prioritize meeting topics
             	- Prepare retrospective agendas in advance
             	- Collect ideas and run idea tournaments with your team",
-    		"votes" : 545,
-    		"score" : 3.66,
     		"views" : 4646,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
-            "liked" : true,
-            "likesCount" : 8998,
-            "createdAt": "2016-02-18T03:22:56.637Z",
+        "liked" : true,
+        "likesCount" : 8998,
+        "voted": false,
+        "votedStar": null,
+        "votesCount": 1000,
+        "averageStar": 4,
+        "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
     		"categoryList": [
           {
@@ -499,13 +513,15 @@ Other status codes:
     		"name" : "Growth Bot",
     		"title": "A chatbot to organize your visit to Tangier",
     		"body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
-    		"votes" : 1445,
-    		"score" : 4.56,
     		"views" : 97090,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
-            "liked" : true,
-            "likesCount" : 8998,
-            "createdAt": "2016-02-18T03:22:56.637Z",
+        "liked" : true,
+        "likesCount" : 8998,
+        "voted": false,
+        "votedStar": null,
+        "votesCount": 1000,
+        "averageStar": 4,
+        "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
     		"categoryList": [
           {
@@ -539,13 +555,15 @@ Other status codes:
             	- Collect and prioritize meeting topics
             	- Prepare retrospective agendas in advance
             	- Collect ideas and run idea tournaments with your team",
-    		"votes" : 545,
-    		"score" : 3.66,
     		"views" : 4646,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
-            "liked" : true,
-            "likesCount" : 8998,
-            "createdAt": "2016-02-18T03:22:56.637Z",
+        "liked" : true,
+        "likesCount" : 8998,
+        "voted": false,
+        "votedStar": null,
+        "votesCount": 1000,
+        "averageStar": 4,
+        "createdAt": "2016-02-18T03:22:56.637Z",
     		"updatedAt": "2016-02-18T03:48:35.824Z",
     		"categoryList": [
           {
@@ -633,11 +651,11 @@ Required fields: `email`, `username`, `password`
 
 `POST /api/upload-image`
 
-Authentication required, returns a String that's the uploaded image name
+Authentication required, returns a String that's the uploaded image url
 
 Make sure the request content type is `Content-Type: multipart/form-data`
 
-URL is `http://45.32.117.24/images/{uploaded-image-name}`
+Returned URL is `http://45.32.117.24/images/{uploaded-image-name}`
 
 
 ### Get Current User
@@ -852,6 +870,25 @@ No additional parameters required
 Authentication required, returns the [Bot](#single-bot)
 
 No additional parameters required
+
+
+### Vote Bot
+
+`POST /api/bots/:slug/vote`
+
+Example request body:
+
+```JSON
+{
+  "vote": {
+    "star": 4
+  }
+}
+```
+
+Authentication required, returns the [Bot](#single-bot)
+
+Required field: `star`
 
 
 ### Get Categories
