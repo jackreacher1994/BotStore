@@ -51,7 +51,7 @@ Other status codes:
 {
   "user": {
     "email": "jack@gmail.com",
-    "token": "jwt.token.here",
+    "password": "123456",
   }
 }
 ```
