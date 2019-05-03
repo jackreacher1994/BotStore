@@ -51,7 +51,7 @@ Other status codes:
 {
   "user": {
     "email": "jack@gmail.com",
-    "password": "123456",
+    "token": "jwt.token.here",
   }
 }
 ```
@@ -87,6 +87,7 @@ Other status codes:
     "body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
     "views" : 97090,
     "image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
+    "url" : "https://botlist.co/bots/coin-prices-watcher",
     "categoryList": [
       {
         "slug" => "traveling",
@@ -132,6 +133,7 @@ Other status codes:
     "body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
     "views" : 97090,
     "image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
+    "url" : "https://botlist.co/bots/coin-prices-watcher",
     "categoryList": [
       {
         "slug" => "traveling",
@@ -173,6 +175,7 @@ Other status codes:
             - Collect ideas and run idea tournaments with your team",
     "views" : 4646,
     "image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
+    "url" : "https://botlist.co/bots/coin-prices-watcher",
     "categoryList": [
       {
         "slug" => "traveling",
@@ -309,6 +312,7 @@ Other status codes:
     		"body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
     		"views" : 97090,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
+    		"url" : "https://botlist.co/bots/coin-prices-watcher",
         "liked" : false,
         "likesCount" : 5566,
         "voted": false,
@@ -351,6 +355,7 @@ Other status codes:
             	- Collect ideas and run idea tournaments with your team",
     		"views" : 4646,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
+    		"url" : "https://botlist.co/bots/coin-prices-watcher",
         "liked" : true
         "likesCount" : 8998,
         "voted": false,
@@ -416,6 +421,7 @@ Other status codes:
     		"body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
     		"views" : 97090,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
+    		"url" : "https://botlist.co/bots/coin-prices-watcher",
         "liked" : true,
         "likesCount" : 8998,
         "voted": false,
@@ -458,6 +464,7 @@ Other status codes:
             	- Collect ideas and run idea tournaments with your team",
     		"views" : 4646,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
+    		"url" : "https://botlist.co/bots/coin-prices-watcher",
         "liked" : true,
         "likesCount" : 8998,
         "voted": false,
@@ -515,6 +522,7 @@ Other status codes:
     		"body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
     		"views" : 97090,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
+    		"url" : "https://botlist.co/bots/coin-prices-watcher",
         "liked" : true,
         "likesCount" : 8998,
         "voted": false,
@@ -557,6 +565,7 @@ Other status codes:
             	- Collect ideas and run idea tournaments with your team",
     		"views" : 4646,
     		"image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
+    		"url" : "https://botlist.co/bots/coin-prices-watcher",
         "liked" : true,
         "likesCount" : 8998,
         "voted": false,
@@ -612,7 +621,7 @@ Other status codes:
 
 `POST /api/users/login`
 
-Example request body:
+Example request body when login by email & password (normal login):
 ```JSON
 {
   "user":{
@@ -622,9 +631,25 @@ Example request body:
 }
 ```
 
-No authentication required, returns a [User](#users-for-authentication)
-
 Required fields: `email`, `password`
+
+`password` is your BotStore account's password (which be set when registering)
+
+Example request body when login by social network:
+```JSON
+{
+  "user":{
+    "email": "jack@gmail.com",
+    "hash": "J7889KGUI57H"
+  }
+}
+```
+
+Required fields: `email`, `hash`
+
+`hash` is your social account's id (which can be retrieved by social network's API)
+
+No authentication required with both two cases, returns a [User](#users-for-authentication)
 
 
 ### Registration
@@ -777,6 +802,7 @@ Example request body:
     "title": "A chatbot to organize your visit to Tangier",
     "body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
     "image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
+    "url" : "https://botlist.co/bots/coin-prices-watcher",
     "categoryList": ["Traveling", "Life"]
   }
 }
@@ -784,7 +810,7 @@ Example request body:
 
 Authentication required, will return an [Bot](#single-bot)
 
-Required fields: `name`, `title`, `body`, `image`
+Required fields: `name`, `title`, `body`, `image`, `url`
 
 Optional fields: `categoryList` as an array of Strings
 
@@ -802,6 +828,7 @@ Example request body:
     "title": "A chatbot to organize your visit to Tangier",
     "body": "Organize your circuit in the city of Tangier by the number of days you’re staying and rest assured about what you’re going to visit and how far is it from where you are or will be.",
     "image" : "https://static.productionready.io/images/smiley-cyrus.jpg",
+    "url" : "https://botlist.co/bots/coin-prices-watcher",
     "categoryList": ["Traveling", "Life"]
   }
 }
@@ -809,7 +836,7 @@ Example request body:
 
 Authentication required, returns the updated [Bot](#single-bot)
 
-Optional fields: `name`, `title`, `body`, `image`, `categoryList`
+Optional fields: `name`, `title`, `body`, `image`, `categoryList`, `url`
 
 The `slug` also gets updated when the `name` is changed
 
