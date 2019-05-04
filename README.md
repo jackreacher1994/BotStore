@@ -617,11 +617,11 @@ Other status codes:
 
 ## Endpoints
 
-### Authentication
+### Normal Authentication
 
 `POST /api/users/login`
 
-Example request body when login by email & password (normal login):
+Example request body:
 ```JSON
 {
   "user":{
@@ -633,23 +633,18 @@ Example request body when login by email & password (normal login):
 
 Required fields: `email`, `password`
 
-`password` is your BotStore account's password (which be set when registering)
+No authentication required, returns a [User](#users-for-authentication)
 
-Example request body when login by social network:
-```JSON
-{
-  "user":{
-    "email": "jack@gmail.com",
-    "hash": "J7889KGUI57H"
-  }
-}
-```
 
-Required fields: `email`, `hash`
+### Social Authentication
 
-`hash` is your social account's id (which can be retrieved by social network's API)
+`GET /api/users/login/facebook`
 
-No authentication required with both two cases, returns a [User](#users-for-authentication)
+or
+
+`GET /api/users/login/twitter`
+
+No authentication required, returns a [User](#users-for-authentication)
 
 
 ### Registration
