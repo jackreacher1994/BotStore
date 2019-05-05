@@ -62,7 +62,7 @@ Other status codes:
 
 ```JSON
 {
-  "message": "You need to confirm your account. We have sent you an activation code, please check your email.",
+  "message": "You need to confirm your account. We sent you an activation request, please check your email inbox.",
 }
 ```
 
@@ -653,13 +653,18 @@ Example request body:
 }
 ```
 
-Required fields: `email`, `password`
-
 No authentication required, returns a [User](#users-for-authentication)
+
+Required fields: `email`, `password`
 
 If user account has not been activated, returns a [Message](#message) with 202 status code
 
-Message content: `You need to confirm your account. We have sent you an activation code, please check your email.`
+Example response payload:
+```JSON
+{
+  "message": "You need to confirm your account. We have sent you an activation code, please check your email.",
+}
+```
 
 
 ### Social Authentication
@@ -690,9 +695,59 @@ Example request body:
 
 No authentication required, returns a [Message](#message) with 201 status code
 
-Message content: `We sent you an activation code. Check your email and click on the link to verify.`
-
 Required fields: `email`, `username`, `password`
+
+Example response payload:
+```JSON
+{
+  "message": "We sent you an activation request. Please check your email inbox.",
+}
+```
+
+
+### Request Password Reset
+
+`POST /api/users/password/reset`
+
+Example request body:
+```JSON
+{
+  "user":{
+    "email": "jack@gmail.com",
+  }
+}
+```
+
+No authentication required, returns a [Message](#message) with 201 or 404 status code
+
+Required fields: `email`
+
+Example response payload:
+```JSON
+{
+  "message": "We sent you an password reset instruction. Please check your email inbox.",
+}
+```
+
+
+### Reset Password
+
+`PUT /api/users/password/reset/{token}`
+
+Example request body:
+```JSON
+{
+  "user":{
+    "email": "jack@gmail.com",
+    "password": "123456",
+    "password_confirmation": "123456",
+  }
+}
+```
+
+No authentication required, returns a [Message](#message) with 200 or 404 status code
+
+Required fields: `email`, `password`, `password_confirmation`
 
 
 ### Upload Image
