@@ -21,6 +21,17 @@
 Make sure the right content type like `Content-Type: application/json; charset=utf-8` is correctly returned.
 
 
+### Successes and Status Codes:
+
+200 for Successful requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action.
+
+201 for Fulfilled requests, resulting in the creation of a new resource. Example: registering user done and wait for account activation.
+
+202 for the request has been accepted for processing, but the processing has not been completed. Example: login but user account has not been activated.
+
+204 for No content requests. The server successfully processed the request and is not returning any content.
+
+
 ### Errors and Status Codes:
 
 If a request fails any validations, expect a 422 and errors in the following format:
@@ -43,7 +54,18 @@ Other status codes:
 
 404 for Not found requests, when a resource can't be found to fulfill the request.
 
+500 for Internal unknown server error. A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.
+
 ## JSON Objects
+
+### Message
+
+```JSON
+{
+  "message": "You need to confirm your account. We have sent you an activation code, please check your email.",
+}
+```
+
 
 ### Users (for authentication)
 
@@ -635,6 +657,10 @@ Required fields: `email`, `password`
 
 No authentication required, returns a [User](#users-for-authentication)
 
+If user account has not been activated, returns a [Message](#message) with 202 status code
+
+Message content: `You need to confirm your account. We have sent you an activation code, please check your email.`
+
 
 ### Social Authentication
 
@@ -662,7 +688,9 @@ Example request body:
 }
 ```
 
-No authentication required, returns a [User](#users-for-authentication)
+No authentication required, returns a [Message](#message) with 201 status code
+
+Message content: `We sent you an activation code. Check your email and click on the link to verify.`
 
 Required fields: `email`, `username`, `password`
 
